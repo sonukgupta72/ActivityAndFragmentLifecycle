@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity1">
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvBtn1Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Parent Activity, Will log all the life cycle, Launch Mode- standard"
+            android:textSize="10sp"/>
+        <Button
+            android:id="@+id/btnActivity1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBtn1Hint"
+            android:text="Call Activity 1"/>
+
+        <TextView
+            android:id="@+id/tvBtn2Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnActivity1"
+            android:layout_marginTop="5dp"
+            android:text="Will log all the life cycle of activity and fragments, Launch Mode- standard"
+            android:textSize="10sp"/>
+        <Button
+            android:id="@+id/btnActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBtn2Hint"
+            android:text="Call Activity 2"/>
+
+        <TextView
+            android:id="@+id/tvBtn3Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnActivity2"
+            android:layout_marginTop="5dp"
+            android:text="Launch Mode- standard"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btnActivity3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBtn3Hint"
+            android:text="Call Activity 3"/>
+
+        <TextView
+            android:id="@+id/tvBtn4Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnActivity3"
+            android:layout_marginTop="5dp"
+            android:text="Launch Mode- Single Top"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btnActivity4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBtn4Hint"
+            android:text="Call Activity 4"/>
+
+        <TextView
+            android:id="@+id/tvBtn5Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnActivity4"
+            android:layout_marginTop="5dp"
+            android:text="Launch Mode- Single Task"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btnActivity5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBtn5Hint"
+            android:text="Call Activity 5"/>
+
+
+
+        <TextView
+            android:id="@+id/tvBtn6Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnActivity5"
+            android:layout_marginTop="5dp"
+            android:text="Launch Mode- Single Instance"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btnActivity6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBtn6Hint"
+            android:text="Call Activity 6"/>
+
+        <Button
+            android:id="@+id/btnDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnActivity6"
+            android:text="Open Dialog"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
